@@ -1,0 +1,32 @@
+credenciales
+
+AWS
+
+cuenta
+385997874853
+
+aos_moy78
+aos_moy78@hotmail.com
+F22raptor
+
+User:Administrador
+psw:f22raptor
+
+Access key ID: AKIAJUDMGQTOXMEADJRA
+Secret access key: Q0v0MsKZMUr4WQjWepuuWUVt2MlP7g0VrcsZJQB
+
+
+
+user:AdminKS
+psw: adminks
+Access key ID: AKIAJZH5LSCN2EJT6FVA
+Secret access key: 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
+
+
+
+
+
+
+
+
+
