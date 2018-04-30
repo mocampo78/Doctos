@@ -1,0 +1,42 @@
+###############PutMedia API Example##################
+https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/examples-putmedia.html#producersdk-javaapi-writecode-putmediaapi-putmediaclient
+
+
+#########Kinesis Video Streams Producer Libraries###########
+https://github.com/awsdocs/AWS-Kinesis-Video-Documentation/blob/master/doc_source/producer-sdk.md
+
+
+##########(issue#10)Enable producer to push camera live streams to kinesis  #11 
+https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-java/issues/10
+https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-java/pull/11/files#diff-a6ad4f849cc14c9018cdf10ae267f5de
+
+
+
+###########Soporte para la API y las Producer Libraries de Transmisión de vídeo de Kinesis#########
+https://docs.aws.amazon.com/es_es/kinesisvideostreams/latest/dg/how-it-works-kinesis-video-api-producer-sdk.html
+
+
+
+###################Kinesis Video Streams API and Producer Libraries Support ####################
+https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/how-it-works-kinesis-video-api-producer-sdk.html#how-it-works-producer-sdk
+
+
+############Download JAR file aws-java-sdk-kinesisvideo 1.11.278 with all dependencies############
+https://jar-download.com/explore-java-source-code.php?a=aws-java-sdk-kinesisvideo&g=com.amazonaws&v=1.11.278&downloadable=1
+
+
+################WEBCAM SARXOS#############################
+http://webcam-capture.sarxos.pl/
+
+
+
+
+##########################CLOUD FRONT###################################
+https://aws.amazon.com/es/blogs/mobile/streaming-videos-to-mobile-app-users-via-amazon-cloudfront-cdn/
+
+
+############# FOROS #######################
+https://forums.aws.amazon.com/search.jspa?q=kinesis&objID=f70&dateRange=all&searchID=9423781&forumID=70&rankBy=10001&start=15
+
+https://forums.aws.amazon.com/index.jspa
+https://forums.aws.amazon.com/search.jspa?mbtc=ecee90c3aa15186d1f0e3aef2820ea82f2af56a1a1d4dbd52cdc841bbb0d853e&q=live+stream&x=9&y=7

@@ -1,0 +1,200 @@
+
+https://docs.aws.amazon.com/es_es/kinesisvideostreams/latest/dg/producersdk-javaapi-downloadcode.html
+
+
+//TRANSMISION DE VIDEO
+https://docs.aws.amazon.com/es_es/kinesisvideostreams/latest/dg/producer-sdk.html
+
+https://docs.aws.amazon.com/es_es/kinesisvideostreams/latest/dg/examples.html
+
+
+E:\HQ_trivia>ffmpeg -i fs.mp4 -map 0:0 fs.mkv
+E:\HQ_trivia>ffmpeg -i trivia.mp4 -b:v 10M -minrate 1M -maxrate 1M -bufsize 1M -map 0:1 -bf 0 trivia.mkv
+
+
+
+*****************Creación de una transmisión de vídeo de Kinesis************
+https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-createstream.html#gs-createstream-console
+
+
+******Kinesis Video Streams API and Producer Libraries Support *****
+https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/how-it-works-kinesis-video-api-producer-sdk.html#how-it-works-kinesis-video-api
+
+
+///CONFIGURAR AWS PARA KINESIS STREAM
+$ aws configure
+AWS Access Key ID [None]: AKIAJZH5LSCN2EJT6FVA
+AWS Secret Access Key [None]: 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
+Default region name [None]: us-east-1
+Default output format [None]: ENTER
+
+
+/////CREAR KINESIS VIDEO STREAM CON AWS CLI
+$ aws kinesisvideo create-stream --stream-name "MyKinesisVideoStream" --data-retention-in-hours "24"
+
+
+
+
+
+//CONVERTIR MP4 TO MKV
+http://ffmpeg.org/ffmpeg.html#Advanced-options
+
+https://superuser.com/questions/639402/convert-specific-video-and-audio-track-only-with-ffmpeg
+
+
+
+-----------------------------------------------------------------------
+//////////////¿Qué es la AWS Command Line Interface?
+https://docs.aws.amazon.com/es_es/cli/latest/userguide/cli-chap-welcome.html
+
+
+//CONFIGURACION DE AWS CLI
+https://docs.aws.amazon.com/es_es/cli/latest/userguide/cli-chap-getting-started.html
+
+
+
+
+
+
+
+
+INSTALACION AWS CLI
+
+
+Instalación de la AWS Command Line Interface en Microsoft Windows
+Puede instalar la AWS CLI en Windows con un instalador independiente o con pip, un administrador de paquetes para Python. Si ya tiene pip, siga las instrucciones del tema de instalación principal.
+
+
+https://www.python.org/downloads/release/python-362/
+
+Secciones
+
+Instalador de MSI
+Instalación de Python, pip y la AWS CLI en Windows
+Añadir el ejecutable de la AWS CLI a su ruta de la línea de comandos
+Instalador de MSI
+La CLI de AWS es compatible con Microsoft Windows XP o posterior. Para los usuarios de Windows, el paquete de instalación de MSI ofrece un entorno familiar y cómodo para instalar la AWS CLI sin necesidad de instalar ningún otro requisito previo.
+
+Cuando se hayan publicado las actualizaciones, deberá repetir el proceso de instalación para obtener la última versión de la AWS CLI. Si prefiere actualizarla con frecuencia, tenga en cuenta la posibilidad de usar pip para instalar actualizaciones con más facilidad.
+
+Para instalar la AWS CLI utilizando el instalador MSI
+
+Descargue el instalador MSI adecuado.
+
+Descarga del instalador MSI de la AWS CLI para Windows (64 bits)
+
+Descarga del instalador MSI de la AWS CLI para Windows (32 bits)
+
+nota
+
+El instalador MSI para la CLI de AWS no funciona con Windows Server 2008 (versión 6.0.6002). Use pip para instalarla en esta versión de Windows.
+
+Ejecute el instalador MSI descargado.
+
+Siga las instrucciones que aparecen en pantalla.
+
+La CLI se instala de forma predeterminada en C:\Program Files\Amazon\AWSCLI (64 bits) o C:\Program Files (x86)\Amazon\AWSCLI (32 bits). Para confirmar la instalación, use el comando aws --version en un símbolo del sistema (abra el menú INICIO y busque "cmd" si no sabe dónde está instalado el símbolo del sistema).
+
+> aws --version
+aws-cli/1.11.84 Python/3.6.2 Windows/7 botocore/1.5.47
+No incluya el símbolo de comando (">", que aparece arriba) al escribir un comando. Estos símbolos se incluyen en los listados del programa para diferenciar los comandos introducidos de los que devuelve la CLI. En el resto de esta guía se utiliza el símbolo de comando genérico "$", excepto en los casos en los que un comando es específico de Windows.
+
+Si Windows no puede encontrar el ejecutable, es posible que tenga que volver a abrir el símbolo del sistema o añadir el directorio de instalación a su variable de entorno PATH manualmente.
+
+Actualización de una instalación MSI
+La CLI de AWS se actualiza de forma habitual. Consulte la página de Versiones en GitHub para ver si se ha publicado una versión más reciente. Para actualizar a la última versión, descargue y ejecute de nuevo el instalador MSI según se detalla anteriormente.
+
+Desinstalación
+Para desinstalar la AWS CLI, abra el Panel de control y seleccione Programas y características. Seleccione la entrada denominada interfaz de línea de comandos de AWS y haga clic en Desinstalar para iniciar el desinstalador. Confirme que desea desinstalar la AWS CLI cuando se le solicite.
+
+También puede iniciar el menú Programas y características desde la línea de comandos con el siguiente comando:
+
+> appwiz.cpl
+Instalación de Python, pip y la AWS CLI en Windows
+La Python Software Foundation ofrece instaladores para Windows que incluyen pip.
+
+Para instalar Python 3.6 y pip (Windows)
+
+Descargue el instalador del archivo ejecutable de Python 3.6 para Windows x86-64 desde la página de descargas de Python.org.
+
+Ejecute el instalador.
+
+Elija Add Python 3.6 to PATH.
+
+Seleccione Install Now.
+
+El instalador instala Python en su carpeta de usuario y añade sus directorios de archivos ejecutables a su ruta de usuario.
+
+Para instalar la AWS CLI con pip (Windows)
+
+Abra el procesador de comandos de Windows desde el menú Inicio.
+
+Compruebe que tanto Python como pip estén instalados correctamente con los siguientes comandos:
+
+C:\Windows\System32> python --version
+Python 3.6.2
+C:\Windows\System32> pip --version
+pip 9.0.1 from c:\users\myname\appdata\local\programs\python\python36\lib\site-packages (python 3.6)
+Instale la AWS CLI con pip:
+
+C:\Windows\System32> pip install awscli
+Compruebe que la AWS CLI esté instalada correctamente:
+
+C:\Windows\System32> aws --version
+aws-cli/1.11.84 Python/3.6.2 Windows/7 botocore/1.5.47
+Para actualizar a la versión más reciente, ejecute el comando de instalación de nuevo:
+
+C:\Windows\System32> pip install --user --upgrade awscli
+Añadir el ejecutable de la AWS CLI a su ruta de la línea de comandos
+Después de realizar la instalación con pip, añada el ejecutable aws a su variable de entorno PATH del sistema operativo. Con una instalación de MSI, esto debería ocurrir automáticamente, pero es posible que deba configurarlo manualmente si el comando aws no funciona.
+
+Python 3.6 y pip: %USERPROFILE%\AppData\Local\Programs\Python\Python36\Scripts
+
+Instalador MSI (64 bits): C:\Program Files\Amazon\AWSCLI
+
+Instalador MSI (32 bits): C:\Program Files (x86)\Amazon\AWSCLI
+
+Para modificar su variable PATH (Windows)
+
+Pulse la tecla de Windows y escriba las variables de entorno.
+
+Elija Editar las variables de entorno de esta cuenta.
+
+Elija PATH y después Editar.
+
+Añada rutas al campo Valor de la variable, separadas por punto y coma. Por ejemplo: C:\existing\path;C:\new\path
+
+Elija Aceptar dos veces para aplicar la nueva configuración.
+
+Cierre los símbolos del sistema en ejecución y vuelva a abrirlos.
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------
+
+#############CONVERTIR MP4 TO MKV##################################
+
+ffmpeg -i fs.mp4 -b:v 10M -minrate 10M -maxrate 10M -bufsize 10M -map 0 -bf 0 fs.mkv
+
+E:\HQ_trivia>ffmpeg -i fs.mp4 -map 0:0 fs.mkv
+
+
+E:\HQ_trivia>ffmpeg -i trivia.mp4 -b:v 10M -minrate 1M -maxrate 1M -bufsize 1M -map 0:1 -bf 0 trivia.mkv
+
+
+
+
+abr 05, 2018 5:19:26 PM com.amazonaws.internal.DefaultServiceEndpointBuilder getServiceEndpoint
+INFORMACIÓN: {kinesisvideo, us-east-1} was not found in region metadata, trying to construct an endpoint using the standard pattern for this region: 'kinesisvideo.us-east-1.amazonaws.com'.
+onAckEvent AckEvent{ackEventType=ERROR, fragmentTimecode=null, fragmentNumber='null', errorCode=MORE_THAN_ONE_TRACK_FOUND, errorId=4005}
+onComplete
+onAckEvent AckEvent{ackEventType=ERROR, fragmentTimecode=null, fragmentNumber='null', errorCode=MORE_THAN_ONE_TRACK_FOUND, errorId=4005}
+onComplete
+onAckEvent AckEvent{ackEventType=ERROR, fragmentTimecode=null, fragmentNumber='null', errorCode=MORE_THAN_ONE_TRACK_FOUND, errorId=4005}
+onComplete
