@@ -1,2 +1,2 @@
-# elektra-cursos
-cursos de la empresa
+# Ejercicios
+cursos
